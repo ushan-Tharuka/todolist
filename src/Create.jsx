@@ -10,7 +10,9 @@ function Create() {
       .post('http://localhost:3001/add', { task }, {
         headers: { 'Content-Type': 'application/json' }, // Set the content type explicitly
       })
-      .then((result) => console.log(result.data))
+      .then((result) => {
+          location.reload()
+      })
       .catch((err) => console.log(err));
   };
   
