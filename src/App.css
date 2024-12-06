@@ -68,7 +68,7 @@
 }
 
 .create_form input {
-    width: 250px;
+    width: 350px;
     padding: 10px;
     border: none; /* Removed border */
     outline: none;
@@ -86,7 +86,7 @@
 
 .create_form button {
     padding: 10px 20px; /* Added more padding for better appearance */
-    background-color: #f85757; /* Red color for the button */
+    background-color: #5a57f8; /* Red color for the button */
     color: white;
     cursor: pointer;
     border: none;
@@ -97,14 +97,14 @@
 }
 
 .create_form button:hover {
-    background-color: #d94141; /* Darker red on hover */
+    background-color: #41d96a; /* Darker red on hover */
     transform: scale(1.05); /* Slightly enlarge button */
 }
 
 .task {
     display: flex;
     align-items: center;
-    width: 360px;
+    width: 400px;
     justify-content: space-between;
     background-color: #f9f9f9;
     color: black;
