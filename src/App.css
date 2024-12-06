@@ -1,4 +1,4 @@
-.home {
+/* .home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,4 +50,107 @@
 
 .task div icon{
     cursor: pointer;
+} */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create_form {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5; /* Light background for the form */
+    border-radius: 30px; /* Rounded corners for the input and button container */
+    padding: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.create_form input {
+    width: 250px;
+    padding: 10px;
+    border: none; /* Removed border */
+    outline: none;
+    border-radius: 30px; /* Rounded corners */
+    font-size: 16px;
+    background-color: transparent; /* Match container's background */
+    margin-right: 10px; /* Spacing between input and button */
+    color: #555; /* Subtle text color */
+}
+
+.create_form input::placeholder {
+    color: #aaa; /* Placeholder text color */
+    font-size: 14px;
+}
+
+.create_form button {
+    padding: 10px 20px; /* Added more padding for better appearance */
+    background-color: #f85757; /* Red color for the button */
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover animation */
+}
+
+.create_form button:hover {
+    background-color: #d94141; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    color: black;
+    height: 45px;
+    padding: 5px 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Added animations */
+}
+
+.task:hover {
+    background-color: #e6f7ff; /* Subtle blue background on hover */
+    transform: scale(1.02); /* Slightly enlarge task */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Add more shadow for depth */
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.line_through {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.checkbox .icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: green;
+}
+
+.task div span {
+    margin: 0px 5px 0px 4px;
+    font-size: 16px;
+}
+
+.task div icon {
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    transition: transform 0.2s; /* Smooth animation on hover */
+}
+
+.task div icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
